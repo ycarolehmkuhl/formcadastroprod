@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400&display=swap');
+
+*{
+    font-family: "poppins", sans-serif;
+}
+
+body{
+    box-sizing: border-box;
+}
+.navbar{
+    background-color: #00C99C;
+}
+.navbar a{
+    color: #ffffff;
+    font-size: 15px;
+    margin-left: 5px;
+    margin-right: 5px
+}
+
+imput{
+    display: inline-block;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+main h1{
+    color: #1AAB6F;
+    font-size: 40px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+main .formulario{
+    margin-top: 5px;
+    
+    
+}
+main .formulario span{
+    margin-top: 1px;
+    margin-bottom: 1px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.3);
+    position: relative;
+}
+main .formulario span::before, main .alternative span::after{
+    position:absolute;
+    content: '';
+    height: 1px;
+    width: 100px;
+    background: rgba(255, 255, 255, 0.945)5) ;
+    bottom: 50%;
+    right: 50px;
+}
+main .formulario span::after{
+    left: 50px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+label{
+    display: flex;
+    flex-direction: column;
+}
+
+main form span{
+    font-size: 15px;
+    margin-top: 10px;
+}
+main form input{
+    background: rgb(199, 199, 199);
+    width: 300px;
+    height: 50px;
+    padding: 10px;
+    margin-top: 5px;
+    outline: none;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    border: 1px solid rgb(166, 166, 166);
+    border-radius: 8px;
+    
+}
+main form input[type="submit"]{
+    cursor: pointer;
+    width: 50%;
+    margin-top: 25px;
+    margin-bottom: 3px;
+    border: none;
+    border-radius: 32px;
+    background: #1AAB6F;
+    color: white;
+    font-size: 15px;
+    transition:all 0.3s ease-in-out;
+}
+main form input[type="submit"]:hover{
+    background: #1aab6f9f;
+}
+
+main form input[type="reset"]{
+    cursor: pointer;
+    width: 50%;
+    margin-top: 2px;
+    margin-bottom: 3px;
+    border: none;
+    border-radius: 32px;
+    background: #ff0000;
+    color: white;
+    font-size: 15px;
+    transition:all 0.3s ease-in-out;
+}
+main form input[type="reset"]:hover{
+    background: #ff000088;
+}
+@media screen and (max-width: 300px){
+    .navbar a{
+        color: #ffffff;
+        font-size: 15px;
+        margin-top: 10px;
+        margin-left: 5px;
+        
+        margin-right: 5px
+        
+    }
+    
+}
+
+
